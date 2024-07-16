@@ -1,0 +1,15 @@
+<nav class="bg-gray-800 p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <a class="text-white font-bold text-xl" href="/">Logo</a>
+    <div *ngIf="!isAuthenticated">
+      <a class="text-white mr-4" routerLink="/signup">Signup</a>
+      <a class="text-white" routerLink="/login">Login</a>
+    </div>
+    <div *ngIf="isAuthenticated" class="flex space-x-4">
+      <a class="text-white" routerLink="/posts">Posts</a>
+      <a class="text-white" routerLink="/services">Services</a>
+      <a class="text-white" routerLink="/about">About Us</a>
+      <a class="text-white" routerLink="/contact">Contact</a>
+    </div>
+  </div>
+</nav>
