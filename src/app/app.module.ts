@@ -10,6 +10,9 @@ import { SignupComponent } from './components/signup/signup.component';
 import { LoginComponent } from './components/login/login.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { PostComponent } from './components/post/post.component';
+import { UpdatePostComponent } from './components/update-post/update-post.component';
+import { CreatePostComponent } from './components/create-post/create-post.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +20,10 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     SignupComponent,
     LoginComponent,
     DashboardComponent,
-    NavbarComponent
+    NavbarComponent,
+    PostComponent,
+    UpdatePostComponent,
+    CreatePostComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,3 @@
-
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
@@ -21,3 +20,7 @@ export class AuthService {
     return this.http.post<any>(`${this.apiUrl}/login`, loginDetails)
   }
 }
+
+
+
+

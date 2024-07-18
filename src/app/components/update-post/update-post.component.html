@@ -1,0 +1,22 @@
+
+<form [formGroup]="updateForm" (ngSubmit)="onSubmit()" class="max-w-md mx-auto p-6 bg-white shadow-md rounded-md">
+  
+    <div class="mb-4">
+      <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+      <input id="title" formControlName="title" type="text" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+    </div>
+  
+    <div class="mb-4">
+      <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
+      <input id="description" formControlName="description" type="text" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+    </div>
+
+    <div class="mb-4">
+        <label for="postUrl" class="block text-sm font-medium text-gray-700">postUrl</label>
+        <input id="postUrl" formControlName="postUrl" type="text" class="mt-1 p-2 block w-full border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+      </div>
+  
+    <button type="submit" [disabled]="updateForm.invalid" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">update</button>
+    
+  </form>
+  
